@@ -1,13 +1,10 @@
-// this simple jQuery plugin takes a rss feed and returns an object as JSON
+this simple jQuery plugin takes a rss feed and returns an object as JSON
 
 
-// SAMPLE USAGE:
-//
-/***
+SAMPLE USAGE:
 
-
-//display instagram thumbnails based on a certain tag..
-var instagramFeed = $(this).feedToJson({
+//fetch and display an instagram rss feed for recent posts tagged 'tacos'
+$.feedToJson({
 	feed:'http://instagr.am/tags/tacos/feed/recent.rss',
 	success: function(data){
 		var $holder = $('<div class="instagramFeed"></div>');
@@ -18,8 +15,3 @@ var instagramFeed = $(this).feedToJson({
 		$('body').append($holder);
 	}
 });
-
-
-***/
-
--CSB
